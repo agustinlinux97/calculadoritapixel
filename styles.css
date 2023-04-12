@@ -1,0 +1,77 @@
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+  * {
+    margin: 0;
+}
+
+body {
+    background-image: url(img/background1.jpg);
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+
+.calccontainer {
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+    width: 160px;
+    background-color: #15ffffcb;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.466);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    margin: 75px;
+}
+
+.calc input[type=button], [type=reset] {
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.363);
+    background-color: aquamarine;
+    height: 35px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.calc input[type=textfield]{
+    border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.363);
+    background-color: aquamarine;
+    grid-column: 1 / 5;
+    height: 35px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    text-align: end;
+    padding-right: 5px;
+}
+
+.calc input[type=button]:hover, [type=reset]:hover {
+    background-color: rgb(158, 253, 221);
+}
+
+.calc input[type=button]:active, [type=reset]:active {
+    background-color: rgb(133, 223, 193);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466) inset;
+
+}
+
+.calc input[type=textfield]:hover{
+    border: solid 1px rgba(0, 0, 0, 0.363);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466) inset;
+
+}
+
+.foot {
+    font-family: 'Space Mono', monospace;
+    font-size: 6.4px;
+    color: rgba(0, 0, 0, 0.658);
+    text-align: center;
+    grid-column: 1 /5;
+}
