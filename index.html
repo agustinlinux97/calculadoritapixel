@@ -9,30 +9,35 @@
     <title>Calculator</title>
 </head>
 <body>
-    <form name="calculadora">
-        <div class="calccontainer">
-            <div class="calc">
-                <input type="textfield" name="result" id="" autocomplete="off" readonly>
-                <input type="button" value="7" onclick="document.calculadora.result.value+='7'">
-                <input type="button" value="8" onclick="document.calculadora.result.value+='8'">
-                <input type="button" value="9" onclick="document.calculadora.result.value+='9'">
-                <input type="button" value="+" onclick="document.calculadora.result.value+='+'">
-                <input type="button" value="4" onclick="document.calculadora.result.value+='4'">
-                <input type="button" value="5" onclick="document.calculadora.result.value+='5'">
-                <input type="button" value="6" onclick="document.calculadora.result.value+='6'">
-                <input type="button" value="-" onclick="document.calculadora.result.value+='-'">
-                <input type="button" value="1" onclick="document.calculadora.result.value+='1'">
-                <input type="button" value="2" onclick="document.calculadora.result.value+='2'">
-                <input type="button" value="3" onclick="document.calculadora.result.value+='3'">
-                <input type="button" value="*" onclick="document.calculadora.result.value+='*'">
-                <input type="button" value="0" onclick="document.calculadora.result.value+='0'">
-                <input type="reset" value="C">
-                <input type="button" value="=" onclick="document.calculadora.result.value=eval(document.calculadora.result.value)">
-                <input type="button" value="/" onclick="document.calculadora.result.value+='/'">
-                <div class="foot">Powered by Mini, the cat</div>
+    <div id="loader-container">
+        <div class="loader"></div>
+    </div>
+    <div id="backgroundsContainer">
+        <form name="calculadora">
+            <div class="calccontainer">
+                <div class="calc">
+                    <input type="textfield" name="result" id="" autocomplete="off" readonly>
+                    <input type="button" value="7" onclick="document.calculadora.result.value+='7'">
+                    <input type="button" value="8" onclick="document.calculadora.result.value+='8'">
+                    <input type="button" value="9" onclick="document.calculadora.result.value+='9'">
+                    <input type="button" value="+" onclick="document.calculadora.result.value+='+'">
+                    <input type="button" value="4" onclick="document.calculadora.result.value+='4'">
+                    <input type="button" value="5" onclick="document.calculadora.result.value+='5'">
+                    <input type="button" value="6" onclick="document.calculadora.result.value+='6'">
+                    <input type="button" value="-" onclick="document.calculadora.result.value+='-'">
+                    <input type="button" value="1" onclick="document.calculadora.result.value+='1'">
+                    <input type="button" value="2" onclick="document.calculadora.result.value+='2'">
+                    <input type="button" value="3" onclick="document.calculadora.result.value+='3'">
+                    <input type="button" value="*" onclick="document.calculadora.result.value+='*'">
+                    <input type="button" value="0" onclick="document.calculadora.result.value+='0'">
+                    <input type="reset" value="C">
+                    <input type="button" value="=" onclick="document.calculadora.result.value=eval(document.calculadora.result.value)">
+                    <input type="button" value="/" onclick="document.calculadora.result.value+='/'">
+                    <div class="foot">Powered by Mini, the cat</div>
+                </div>
             </div>
-        </div>
-</form>
+        </form>
+    </div>
 <script src="code.js"></script>
 </body>
 </html>

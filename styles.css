@@ -1,26 +1,58 @@
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-
-  * {
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+:root {
+    --color1: #15ffffcb;
+}
+* {
     margin: 0;
 }
 
 body {
-    background-image: url(img/background1.jpg);
-    background-size: cover;
-    transition: background-image 1s ease-in-out;
+    padding: 0;
+    background-color: var(--color1);
+}
+#loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color1);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
-.calccontainer {
+.loader {
+    border: 8px solid var(--color1);
+    border-top: 8px solid #f1f1f1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#backgroundsContainer {
+    background-image: url(img/background1.jpg);
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-size: cover;
+    transition: all 1s ease-in-out;
     margin: auto;
     height: 100vh;
-    display: grid;
     align-items: center;
     justify-content: center;
 }
 
 .calc {
     width: 160px;
-    background-color: #15ffffcb;
+    background-color: var(--color1);
     padding: 8px;
     border-radius: 3px;
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.466);
